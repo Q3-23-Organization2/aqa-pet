@@ -7,7 +7,6 @@ public class Sinus {
 
 
         for (int i = 0; i < x.length; i++) {
-            Math.toRadians(i);
 
             System.out.println(Math.sin(x[i]));
         }
