@@ -57,7 +57,7 @@ public String userName;
        return amountSpentMoney > 0;
    }
 
-    public void makePurchase() {
+    public static void makePurchase(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Please enter user purchase price: ");
         double purchasePrice = scan.nextDouble();
