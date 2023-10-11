@@ -1,6 +1,6 @@
 package homework6;
 
-public class Main {
+public class UserValidation {
 
     public static void main(String[] args) {
 

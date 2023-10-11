@@ -1,6 +1,6 @@
 package homework6;
 
-public class UserVerification {
+public class UsersVerification {
 
     public static void main(String[] args) {
 
