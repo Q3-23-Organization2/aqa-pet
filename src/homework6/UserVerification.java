@@ -19,5 +19,10 @@ public class UserVerification {
         user.makePurchase(1584.09);
         user.printTotalAmountOfSpentMoney();
 
+        user = new User("Oleg", "Ole");
+        user.setAmountSpentMoney(760);
+        user.makePurchase(2.99);
+        user.printTotalAmountOfSpentMoney();
+
     }
 }

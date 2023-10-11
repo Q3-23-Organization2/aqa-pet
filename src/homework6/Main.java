@@ -6,7 +6,7 @@ public class Main {
 
     User user = new User("Sergii", "Test12345");
     user.setAmountSpentMoney(40);
-    user.makePurchase(30);
+    user.makePurchase(30.76);
     user.printTotalAmountOfSpentMoney();
 
 
