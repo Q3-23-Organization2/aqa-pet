@@ -18,7 +18,7 @@ public class User {
     }
 
     public void setPassword(String password) {
-        if (password.length() < 8) {
+        if (password.length() <= 8) {
             System.out.println("Sorry, password length must be more than 8 symbols");
         } else {
             this.password = password;
@@ -53,7 +53,7 @@ public class User {
     }
     public boolean isActive;
     public boolean isActive() {
-        return isActive;
+        return password.length() >= 8;
     }
 
     public void setActive(boolean active) {
@@ -73,7 +73,7 @@ public class User {
     public User(String userName, String password) {
         this.userName = userName;
         System.out.println("User name is: " + this.userName);
-        if (password.length() < 8) {
+        if (password.length() <= 8) {
             System.out.println("Sorry, password length must be more than 8 symbols");
         } else {
             this.password = password;
