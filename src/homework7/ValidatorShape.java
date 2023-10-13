@@ -44,7 +44,5 @@ public class ValidatorShape {
         System.out.println(rectangleWithToString.toString());
         System.out.println(rectangleWithToString.equals(rectangleWithToString2));
 
-
-
     }
 }

@@ -4,9 +4,9 @@ import java.util.Objects;
 
 public class Circle extends Shape {
 
-    public double pi = 3.14159;
-    public double circleArea;
-    public double circlePerimeter;
+    private double pi = 3.14159;
+    private double circleArea;
+    private double circlePerimeter;
     private double radius;
 
     public void setRadius(double radius) {
