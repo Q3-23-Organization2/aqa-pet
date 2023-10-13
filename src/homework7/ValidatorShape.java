@@ -26,5 +26,25 @@ public class ValidatorShape {
         triangle.calculatePerimeter();
         triangle.paint();
 
+        Circle circleWithToString = new Circle();
+        Circle circleWithToString2 = new Circle();
+        circleWithToString.setRadius(12);
+        System.out.println(circleWithToString.toString());
+        System.out.println(circleWithToString.equals(circleWithToString2));
+
+        Triangle triangleWithToString = new Triangle();
+        Triangle triangleWithToString2 = new Triangle();
+        triangleWithToString.setTriangleFirstSide(3);
+        System.out.println(triangleWithToString.toString());
+        System.out.println(triangleWithToString.equals(triangleWithToString2));
+
+        Rectangle rectangleWithToString = new Rectangle();
+        Rectangle rectangleWithToString2 = new Rectangle();
+        rectangleWithToString.setRectangleLength(9);
+        System.out.println(rectangleWithToString.toString());
+        System.out.println(rectangleWithToString.equals(rectangleWithToString2));
+
+
+
     }
 }

@@ -1,5 +1,7 @@
 package homework7;
 
+import java.util.Objects;
+
 public class Rectangle extends Shape {
     public double rectangleArea;
     public double rectanglePerimeter;
@@ -31,4 +33,26 @@ public class Rectangle extends Shape {
 
     }
 
+    @Override
+    public String toString() {
+        return "Rectangle{" +
+                "rectangleArea=" + rectangleArea +
+                ", rectanglePerimeter=" + rectanglePerimeter +
+                ", rectangleLength=" + rectangleLength +
+                ", rectangleWidth=" + rectangleWidth +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Rectangle rectangle = (Rectangle) o;
+        return Double.compare(rectangleArea, rectangle.rectangleArea) == 0 && Double.compare(rectanglePerimeter, rectangle.rectanglePerimeter) == 0 && Double.compare(rectangleLength, rectangle.rectangleLength) == 0 && Double.compare(rectangleWidth, rectangle.rectangleWidth) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(rectangleArea, rectanglePerimeter, rectangleLength, rectangleWidth);
+    }
 }

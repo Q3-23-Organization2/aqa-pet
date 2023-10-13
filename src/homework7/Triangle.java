@@ -1,24 +1,26 @@
 package homework7;
 
+import java.util.Objects;
+
 public class Triangle extends Shape {
 
     public double triangleArea;
     public double trianglePerimeter;
-    public double triangleFirstSide;
+    private double triangleFirstSide;
 
     public void setTriangleFirstSide(double triangleFirstSide) {
         this.triangleFirstSide = triangleFirstSide;
     }
-    public double triangleSecondSide;
+    private double triangleSecondSide;
 
     public void setTriangleSecondSide(double triangleSecondSide) {
         this.triangleSecondSide = triangleSecondSide;
     }
-    public double triangleBase;
+    private double triangleBase;
     public void setTriangleBase(double triangleBase) {
         this.triangleBase = triangleBase;
     }
-    public double triangleHeight;
+    private double triangleHeight;
 
     public void setTriangleHeight(double triangleHeight) {
         this.triangleHeight = triangleHeight;
@@ -43,6 +45,28 @@ public class Triangle extends Shape {
 
     }
 
+    @Override
+    public String toString() {
+        return "Triangle{" +
+                "triangleArea=" + triangleArea +
+                ", trianglePerimeter=" + trianglePerimeter +
+                ", triangleFirstSide=" + triangleFirstSide +
+                ", triangleSecondSide=" + triangleSecondSide +
+                ", triangleBase=" + triangleBase +
+                ", triangleHeight=" + triangleHeight +
+                '}';
+    }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Triangle triangle = (Triangle) o;
+        return Double.compare(triangleArea, triangle.triangleArea) == 0 && Double.compare(trianglePerimeter, triangle.trianglePerimeter) == 0 && Double.compare(triangleFirstSide, triangle.triangleFirstSide) == 0 && Double.compare(triangleSecondSide, triangle.triangleSecondSide) == 0 && Double.compare(triangleBase, triangle.triangleBase) == 0 && Double.compare(triangleHeight, triangle.triangleHeight) == 0;
+    }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(triangleArea, trianglePerimeter, triangleFirstSide, triangleSecondSide, triangleBase, triangleHeight);
+    }
 }

@@ -1,5 +1,7 @@
 package homework7;
 
+import java.util.Objects;
+
 public class Circle extends Shape {
 
     public double radius;
@@ -26,5 +28,28 @@ public class Circle extends Shape {
         System.out.println("\u03C0 is: " + pi);
         System.out.println("  ");
 
+    }
+
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "radius=" + radius +
+                ", pi=" + pi +
+                ", circleArea=" + circleArea +
+                ", circlePerimeter=" + circlePerimeter +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Circle circle = (Circle) o;
+        return Double.compare(radius, circle.radius) == 0 && Double.compare(pi, circle.pi) == 0 && Double.compare(circleArea, circle.circleArea) == 0 && Double.compare(circlePerimeter, circle.circlePerimeter) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(radius, pi, circleArea, circlePerimeter);
     }
 }
