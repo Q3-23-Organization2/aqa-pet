@@ -5,12 +5,12 @@ import java.util.Objects;
 public class Rectangle extends Shape {
     public double rectangleArea;
     public double rectanglePerimeter;
-    public double 	rectangleLength;
+    private double 	rectangleLength;
 
     public void setRectangleLength(double rectangleLength) {
         this.rectangleLength = rectangleLength;
     }
-    public double 	rectangleWidth;
+    private double 	rectangleWidth;
 
     public void setRectangleWidth(double rectangleWidth) {
         this.rectangleWidth = rectangleWidth;
