@@ -9,13 +9,25 @@ public class Main {
         System.out.println("    ");
 
         Engineer engineer = new Engineer();
-        engineer.setValue1(15);
+        engineer.setValue1(20);
         engineer.setValue2(10);
         engineer.operationPlus();
+        engineer.operationMinus();
+        engineer.operationDivide();
+        engineer.operationMultiple();
         engineer.mathSquare();
         engineer.mathSquareOfPlusOperation();
         System.out.println("    ");
 
+        Programer programer = new Programer();
+        programer.setValue1(17);
+        programer.setValue2(8);
+        programer.operationMinus();
+        programer.operationPlus();
+        programer.operationDivide();
+        programer.operationMultiple();
+        programer.mathLog();
+        programer.mathLogOfPlusOperation();
 
 
     }
