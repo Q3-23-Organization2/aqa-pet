@@ -1,4 +1,6 @@
-package homework7;
+package homework7.Shape;
+
+import homework7.Shape.Triangle;
 
 public class ValidatorShape {
 

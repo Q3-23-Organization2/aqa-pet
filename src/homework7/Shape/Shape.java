@@ -1,4 +1,4 @@
-package homework7;
+package homework7.Shape;
 
 public class Shape {
     public String color;
