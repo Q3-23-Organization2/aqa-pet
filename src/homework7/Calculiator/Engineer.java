@@ -3,7 +3,7 @@ package homework7.Calculiator;
 public class Engineer extends Calculiator {
     private int value1;
     private int value2;
-    private double plus;
+    private int plus;
     private int minus;
     private int divide;
     private int multi;
@@ -20,7 +20,7 @@ public class Engineer extends Calculiator {
     @Override
     public void operationPlus() {
         plus = value1 + value2;
-        System.out.println("Value1 + Value2 = " + plus);
+        System.out.println("Engineer Value1 + Value2 = " + plus);
     }
     @Override
     public void operationMinus() {
