@@ -13,7 +13,7 @@ public class Main {
         String myAction = action.nextLine();
 
         if (!myAction.equals("rock") && !myAction.equals("paper") && !myAction.equals("scissors")) {
-            System.out.println("Value is not valid.Please enter valid action: rock, paper or scissors");
+            System.out.println("Value is not valid. Please enter valid action: rock, paper or scissors");
         } else {
 
             int random = (int) (Math.random() * 3);
@@ -29,9 +29,19 @@ public class Main {
             } else {
                 System.out.println("Sorry something went wrong");
             }
-
             System.out.println("Computer action is: " + computerAction);
 
+            if (myAction.equals(computerAction)) {
+                System.out.println("You have draw");
+            } else if ((myAction.equals("rock") && computerAction.equals("scissors"))
+                    || (myAction.equals("scissors") && computerAction.equals("paper"))
+                    || (myAction.equals("paper") && computerAction.equals("rock"))); {
+                System.out.println("Сongratulations, You Won!");
+            } else if ((myAction.equals("scissors") && computerAction.equals("rock"))
+                    || (myAction.equals("paper") && computerAction.equals("scissors"))
+                    || (myAction.equals("rock") && computerAction.equals("paper"))); {
+                System.out.println("Sorry, You Lost!");
+            }
         }
 
 
