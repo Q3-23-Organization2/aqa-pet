@@ -35,7 +35,7 @@ public class Main {
             Set<Integer> uniques = new HashSet<>();
             Set<Integer> duplicates = new HashSet<>();
 
-            for(int i=0; i < integerList.size(); i++) {
+            for (int i=0; i < integerList.size(); i++) {
                 if(!uniques.add(integerList.get(i))) {
                     duplicates.add(integerList.get(i));
                 }
