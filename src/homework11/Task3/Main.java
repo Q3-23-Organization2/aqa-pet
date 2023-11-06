@@ -42,6 +42,7 @@ public class Main {
         System.out.println("Sub-point e");
 
         boolean secondNameCheck = Stream.of(user1, user2, user3, user4, user5, user6, user7, user8, user9, user10).anyMatch(user -> user.getSecondName().startsWith("S") || user.getSecondName().startsWith("A"));
+
         if (secondNameCheck) {
             System.out.println("Yes, there are users with second names starting with 'S' or 'A.");
         } else {
