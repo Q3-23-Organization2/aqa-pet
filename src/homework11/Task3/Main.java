@@ -1,10 +1,7 @@
 package homework11.Task3;
 
-
-
 import java.util.Comparator;
 import java.util.stream.Stream;
-
 
 public class Main {
 
